@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block main %}
+    <h1 class="page-title">Регистрация</h1>
+    <form method="POST" enctype="multipart/form-data" class="register-form">
+        <input type="text" name="login" placeholder="Логин" required class="form-input">
+        <input type="password" name="password" placeholder="Пароль" required class="form-input">
+        <input type="text" name="name" placeholder="Полное имя" required class="form-input">
+        <input type="email" name="email" placeholder="Электронная почта" required class="form-input">
+        <textarea name="about" placeholder="О себе" class="form-textarea"></textarea>
+        <input type="file" name="avatar" accept="image/*" class="form-file">
+        <button type="submit" class="btn btn-submit">Зарегистрироваться</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,221 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;  
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+ 
+header {
+    background-color: #0077b6;  
+    color: #fff;  
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+}
+
+header .main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+header .main-nav a {
+    color: #fff; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; 
+}
+
+header .main-nav a:hover {
+    color: #ffc107; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #0077b6; 
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    border-bottom: 2px solid #0077b6;  
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+.main-nav {
+    background-color: #0077b6;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-input, .form-textarea, .form-file {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.form-textarea {
+    resize: vertical;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-submit {
+    background-color: #0077b6;
+    color: #fff;
+}
+
+.btn-submit:hover {
+    background-color: #005f8b;
+}
+
+.btn-edit {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.btn-create {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.ads-list, .ads-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.ad-item, .ad-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px);
+}
+
+.ad-title {
+    color: #0077b6;
+    font-size: 1.2em;
+}
+
+.ad-content {
+    margin-top: 10px;
+}
+
+.ad-author, .ad-email {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.user-table th, .user-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.user-table th {
+    background-color: #0077b6;
+    color: #fff;
+}
+
+.user-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.user-table tr:hover {
+    background-color: #e9f7ff;
+}
+
+.error-message {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.back-link {
+    display: block;
+    margin-top: 20px;
+    color: #0077b6;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+footer{
+    background-color: #0077b6;  
+    color: #fff;  
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

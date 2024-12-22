@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block main %}
+    <form method="POST" enctype="multipart/form-data" class="edit-user-form">
+        <label for="name">Полное имя:</label>
+        <input type="text" name="name" value="{{ user.name }}" required class="form-input"><br>
+
+        <label for="email">Электронная почта:</label>
+        <input type="email" name="email" value="{{ user.email }}" required class="form-input"><br>
+
+        <label for="about">О пользователе:</label>
+        <textarea name="about" class="form-textarea">{{ user.about }}</textarea><br>
+
+        <label for="avatar">Изображение:</label>
+        <input type="file" name="avatar" class="form-file"><br>
+
+        <button type="submit" class="btn btn-submit">Сохранить изменения</button>
+    </form>
+{% endblock %}

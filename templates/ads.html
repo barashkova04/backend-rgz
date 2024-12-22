@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block main %}
+<div class="container">
+    <h1 class="page-title">Доска объявлений</h1>
+
+    {% if ads %}
+        <div class="ads-list">
+            {% for ad in ads %}
+                <div class="ad-item">
+                    <h5 class="ad-title">{{ ad.title }}</h5>
+                    <p class="ad-content">{{ ad.content }}</p> 
+                    <small class="ad-author">Автор: {{ ad.author }}</small><br> 
+                    <small class="ad-email">Email автора: {{ ad.email }}</small>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p class="no-ads">Нет объявлений.</p>
+    {% endif %}
+
+    <div class="create-ad-btn">
+        <a href="{{ url_for('create_add') }}" class="btn btn-primary">Создать объявление</a>
+    </div>
+</div>
+{% endblock %}

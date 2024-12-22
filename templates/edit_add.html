@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block main %}
+    <div class="container">
+        <h1 class="page-title">Редактировать объявление</h1>
+        <form method="POST" class="edit-ad-form">
+            <label for="title">Заголовок</label>
+            <input type="text" id="title" name="title" value="{{ ad.title }}" required class="form-input">
+
+            <label for="content">Содержание</label>
+            <textarea id="content" name="content" required class="form-textarea">{{ ad.content }}</textarea>
+
+            <button type="submit" class="btn btn-submit">Сохранить изменения</button>
+        </form>
+        <a href="{{ url_for('main') }}" class="back-link">Вернуться на главную</a>
+    </div>
+{% endblock %}

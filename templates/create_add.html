@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block main %}
+    <h1 class="page-title">Создать объявление</h1>
+    <form method="POST" class="create-ad-form">
+        <label for="title">Заголовок:</label>
+        <input type="text" name="title" required class="form-input"><br><br>
+
+        <label for="content">Текст объявления:</label>
+        <textarea name="content" required class="form-textarea"></textarea><br><br>
+
+        <button type="submit" class="btn btn-submit">Создать</button>
+    </form>
+    <br>
+    <a href="{{ url_for('main') }}" class="back-link">На главную</a>
+{% endblock %}
