@@ -143,6 +143,7 @@ def login():
         user = cur.fetchone()
 
         if user and check_password_hash(user['password'], password):
+            user = dict(user)
             session['user_id'] = user['id']
             session['is_admin'] = user.get('is_admin', False)
             db_close(conn, cur)
